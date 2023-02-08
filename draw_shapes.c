@@ -26,3 +26,22 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+void print_arrow(int size)
+{
+  int baseHeight = 7;
+  int baseWidth = 5;
+  int headWidth = 10;
+
+  for (int i = 0; i < baseHeight; i++){
+    for(int j = 0; j < baseWidth; j ++){
+      putchar('*');
+    }
+    putchar('\n');
+  }
+  for (int i = headWidth; i > 0; i--){
+    for(int j = 0; j < i; j++){
+      putchar('*');
+    }
+    putchar('\n');
+  }
+}
